@@ -1,0 +1,78 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-02.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Web Server</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">WEB SERVER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="web-server-01.html"><strong>Web Server</strong></a>
+                    <a class="nav-item nav-link" href="../web-services/web-services-01.html"><strong>Web Services</strong></a>
+                    <a class="nav-item nav-link" href="../corba/corba-01.html"><strong>CORBA</strong></a>
+                  </div>
+                </div>
+            </nav>
+        </section>
+        <section class="overview">
+                <br>
+                <h3>Web Server</h3>
+                <h4>Architecture</h4>
+                <p class="p">+ Web Server Architecture follows the following two approaches:
+                    <ol>
+                        <li>Concurrent Approach.</li>
+                        <li>Single-Process-Event-Driven Approach.</li>
+                    </ol>
+                </p>
+                <h5>Concurrent Approach</h5>
+                <p>Concurrent approach allows the web server to handle multiple client requests at the same time. It can be achieved by following methods:
+                    <ol>
+                        <li>Multi-process</li>
+                        <li>Multi-threaded</li>
+                        <li>Hybrid method.</li>
+                    </ol>
+                    <img src="img/images.png" alt="Concurrent Approach" style="margin-left: 380px;">
+                    <br>
+                    <br>
+                    <h6>Multi-processing</h6>
+                    <p>
+                        In this a single process (parent process) initiates several single-threaded child processes and distribute incoming requests to these child processes. Each of the child processes are responsible for handling single request.It is the responsibility of parent process to monitor the load and decide if processes should be killed or forked.
+                    </p>
+                    <h6>Multi-threaded</h6>
+                    <p>
+                        Unlike Multi-process, it creates multiple single-threaded process.
+                    </p>
+                    <h6>Hybrid</h6>
+                    <p>
+                        It is combination of above two approaches. In this approach multiple process are created and each process initiates multiple threads. Each of the threads handles one connection. Using multiple threads in single process results in less load on system resources.
+                    </p>
+                </p>
+                <h5>Single-Process-Event-Driven Approach.</h5>
+                <p>
+                    The single-process event-driven (SPED) architecture uses a single event-driven server process to perform concurrent processing of multiple HTTP requests. The server uses non-blocking systems calls to perform asynchronous I/O operations.
+                </p>
+                <img src="img/image.png" alt="single-event-driven" style="margin-left: 460px;">
+                <br>
+                <br>
+        </section>
+        <section class="toggle-buttons">
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" onclick="window.location.href = 'web-server-01.html';"><< Prev Page </button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px;" onclick="window.location.href = 'web-server-03.html';"> Next Page >></button>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Submitted by <strong><em style="color: brown;">Mohit Chandra Bhatt</em></strong>,<em> BTECH CSE 4th Year</em></p>
+        </section>
+    </body>
+</html>

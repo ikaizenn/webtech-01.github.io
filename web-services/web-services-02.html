@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-02.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Web Services</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">WEB SERVICES</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="../web-server/web-server-01.html"><strong>Web Server</strong></a>
+                    <a class="nav-item nav-link active" href="web-services-01.html"><strong>Web Services</strong></a>
+                    <a class="nav-item nav-link" href="../corba/corba-01.html"><strong>CORBA</strong></a>
+                  </div>
+                </div>
+            </nav>
+        </section>
+        <section class="overview">
+                <br>
+                <h3>Web Services</h3>
+                <h4>SOAP (Simple Object Access Protocol)</h4>
+                <p>
+                    SOAP is known as a transport-independent messaging protocol. SOAP is based on transferring XML data as SOAP Messages. Each message has something which is known as an XML document. Only the structure of the XML document follows a specific pattern, but not the content. The best part of Web services and SOAP is that its all sent via HTTP, which is the standard web protocol.
+                </p>
+                <h5>SOAP message consists of</h5>
+                <p>
+                    + Each SOAP document needs to have a root element known as the <Envelope> element. The root element is the first element in an XML document. <br>
+                    + The "envelope" is in turn divided into 2 parts. The first is the header, and the next is the body. <br>
+                    + The header contains the routing data which is basically the information which tells the XML document to which client it needs to be sent to. <br>
+                    + The body will contain the actual message. <br>
+                </p>
+                <p>
+                    The diagram below shows a simple example of the communication via SOAP.
+                </p>
+                <img src="img/soap.png" alt="soap" style="margin-left: 400px;">
+                <br>
+                <br>
+                <h4>RESTful Web Services</h4>
+                <p>
+                    Restful Web Service is a lightweight, maintainable, and scalable service that is built on the REST architecture. Restful Web Service, expose API from your application in a secure, uniform, stateless manner to the calling client. The calling client can perform predefined operations using the Restful service. The underlying protocol for REST is HTTP. REST stands for REpresentational State Transfer.
+                </p>
+                <img src="img/rest.jpeg" alt="restful" style="margin-left: 400px;">
+                <h5>Restful Methods</h5>
+                <ol>
+                    <li>POST : It is used to send data to a server to create/update a resource.</li>
+                    <li>GET : It is used to request data from a specified resource.</li>
+                    <li>PUT : It is used to send data to a server to create/update a resource.</li>
+                    <li>DELETE : DELETE method deletes the specified resource.</li>
+                </ol>
+                <br>
+        </section>
+        <section class="toggle-buttons">
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" onclick="window.location.href = 'web-services-01.html';"><< Prev Page </button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px;" onclick="window.location.href = 'web-services-03.html';"> Next Page >></button>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Submitted by <strong><em style="color: brown;">Mohit Chandra Bhatt</em></strong>,<em> BTECH CSE 4th Year</em></p>
+        </section>
+    </body>
+</html>

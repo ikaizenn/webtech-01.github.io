@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-01.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Web Server</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">WEB SERVER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../index.html"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="web-server-01.html"><strong>Web Server</strong></a>
+                    <a class="nav-item nav-link" href="../web-services/web-services-01.html"><strong>Web Services</strong></a>
+                    <a class="nav-item nav-link" href="../corba/corba-01.html"><strong>CORBA</strong></a>
+                  </div>
+                </div>
+            </nav>
+        </section>
+        <section class="overview">
+                <br>
+                <h3>Web Server</h3>
+                <p class="p">+ Web server is a computer where the web content is stored. Basically web server is used to host the web sites but there exists other web servers also such as gaming, storage, FTP, email etc. Web site is collection of web pages whileweb server is a software that respond to the request for web resources.<br>
+                + A web server includes several parts that control how web users access hosted files, at minimum an HTTP server. An HTTP server is a piece of software that understands URLs and HTTP.
+                </p>
+                <h5>Web Server Working</h5>
+                <p class="p">+ Web server respond to the client request in either of the following two ways:
+                <ol>
+                    <li>Sending the file to the client associated with the requested URL.</li>
+                    <li>Generating response by invoking a script and communicating with database</li>
+                </ol>
+                <br>
+                <img src="img/web-service-working.jpg" alt="web-service-working" style="margin-left: 225px;">
+                <br>
+                <br>
+                </p>
+                <p>
+                    + When client sends request for a web page, the web server search for the requested page if requested page is found then it will send it to client with an HTTP response.<br>
+                    + If the requested web page is not found, web server will the send an <strong>HTTP response:Error 404 Not found</strong>.<br>
+                    + If client has requested for some other resources then the web server will contact to the application server and data store to construct the HTTP response.<br>
+                    + The Web server process is an example of the client/server model. All computers that host Web sites must have Web server software</p>
+                    <br>
+        </section>
+        <section class="toggle-buttons">
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-right: 20px;"><< Prev Page </button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px;" onclick="window.location.href = 'web-server-02.html';"> Next Page >></button>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Submitted by <strong><em style="color: brown;">Mohit Chandra Bhatt</em></strong>,<em> BTECH CSE 4th Year</em></p>
+        </section>
+    </body>
+</html>
